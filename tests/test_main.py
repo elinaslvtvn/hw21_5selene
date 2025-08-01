@@ -3,9 +3,9 @@ from selene import browser , be , have
 
 
 def test_add_form_selene():
-    browser.element('[name="firstName"]').type('Имя')
+    browser.element('#firstName').type('Имя')
     browser.element('#lastName').type("Фамилия")
-    browser.element('userEmail').type("test@gmail.com")
+    browser.element('#userEmail').type("test@gmail.com")
     browser.element('label[for="gender-radio-1"]').click()
     browser.element('[id="userNumber"]').type("+79991234567")
     browser.element('#dateOfBirthInput').click()
